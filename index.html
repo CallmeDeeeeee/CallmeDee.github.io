@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+     <link rel="stylesheet" href="css/style.css">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Wandering Insight</title>
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <div class="navbar-fixed">
+      <nav class="blue darken-2">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">WISH</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Partnership</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">About Us</a></li>
+      <li><a href="">Our partnership</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+
+ 
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/slider/1.jpeg">
+          <div class="caption left-align">
+            <h3>EXPERIENCE BEYOND YOUR IMAGINATION!</h3>
+            <h5 class="light grey-text text-lighten-3">Play More, Live More.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider/2.jpeg">
+          <div class="caption right-align">
+            <h3>WORK SMART,NOT HARD!</h3>
+            <h5 class="light grey-text text-lighten-3">A New Perspective of Life.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider/3.jpeg">
+          <div class="caption center-align">
+            <h3>YOUR CHOICE,YOU DECIDE!</h3>
+            <h5 class="light grey-text text-lighten-3">Are you up to the challenge?</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <h3 class="center light grey-text text-darken-3">About Us</h3>
+          <div class="col m6 light">
+            <h5>We Are Professionals</h5>
+            <p>we can make your visual imagination come true, feel the whole new level of visual experience. we provide the best visual experience that you can ever wish for, just for you to enjoy. PLAY MORE, EXPERIENCE MORE!!!</p>
+          </div>
+          <div class="col m6 light">
+            <p>GAME DEVELOPMENT</p>
+            <div class="progress">
+                <div class="determinate blue" style="width: 95%"></div>
+            </div>
+            <p>SOFTWARE DEVELOPMENT</p>
+            <div class="progress">
+                <div class="determinate blue" style="width: 90%"></div>
+            </div>
+            <p>MOBILE APP DEVELOPMENT</p>
+            <div class="progress">
+                <div class="determinate blue" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/slider/4.jpeg"></div>
+
+      <div class="container clients">
+        <h3 class="center light white-text">Our Partnership</h3>
+        <div class="row">
+          <div class="col m4 s12 center">
+            <img src="img/clients/epic games.jpeg">
+          </div>
+          <div class="col m4 s12 center">
+            <img src="img/clients/steam.jpeg">
+          </div>
+          <div class="col m4 s12 center">
+            <img src="img/clients/riot games.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      const sideNav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 600,
+        interval: 3000
+      });
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
