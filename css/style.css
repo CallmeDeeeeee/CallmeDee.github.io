@@ -138,6 +138,7 @@ section h3::after {
 	text-indent: 30px;
 	line-height: 25px;
 	margin-bottom: 15px;
+	text-align: center;
 }
 #skills,
 #contact {
