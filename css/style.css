@@ -14,7 +14,7 @@ header h1 {
 	text-transform: uppercase;
 }
 header h1 a {
-	transition: .3s;
+	transition: .1s;
 }
 header h1 a:hover {
 	color: #F84744;
@@ -123,15 +123,16 @@ section h3::before {
 	left: calc(50% - 60px);
 	text-align: center;
 }
-section h3::after {
+section h3::before {
 	content:'';
 	display: block;
-	position: absolute;
-	bottom: -1px;
-	width:40px;
-	height:4px;
-	background-color: #F84744;
-	left: calc(50% - 20px);
+	position: relative;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+	text-align: center;
 }
 #about p {
 	text-align: justify;
@@ -200,7 +201,6 @@ footer small {
 html {
 	scroll-behavior: smooth;
 }
-
 @media (max-width: 768px){
 	.mobile-menu {
 		display: block;
@@ -213,5 +213,5 @@ html {
 	}
 	.col-3 {
 		width:100%;
-	}
+
 }
